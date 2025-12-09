@@ -1,0 +1,17 @@
+version: 0.2
+
+env:
+  variables:
+    SONAR_HOST_URL: 'http://54.206.11.79:9000'
+    SONAR_TOKEN: 'sqa_7b5d4f58f6830525065a67d29aa66dd31c413259'
+
+phases:
+  pre_build:
+    commands:
+      - echo "Start Docker service"
+      - docker --version
+
+  build:
+    commands:
+      - echo " Running SonarQube scanner using Docker"
+      - docker run --rm -e SONAR_HOST_URL=$SONAR_HOST_URL -e SONAR_TOKEN=$(echo $SONAR_TOKEN) -v $(pwd):/usr/src sonarsource/sonar-scanner-cli -Dsonar.projectKey=devops-aws-sonarqube -Dsonar.projectName="devops-aws-sonarqube" -Dsonar.sources=/usr/src/src -Dsonar.python.version=3 -Dsonar.host.url=$SONAR_HOST_URL
