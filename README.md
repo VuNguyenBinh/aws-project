@@ -107,5 +107,5 @@ This greatly enhances software quality and accelerates development.
 ---
 
 ## 🖼 CI/CD Pipeline Diagram
-![CI/CD Pipeline Architecture](https://raw.githubusercontent.com/<user>/<repo>/main/cicd-diagram.png)
+![CI/CD Pipeline Architecture](https://raw.githubusercontent.com/VuNguyenBinh/aws-project/main/demo2.png)
 
