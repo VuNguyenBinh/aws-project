@@ -106,5 +106,6 @@ This greatly enhances software quality and accelerates development.
 
 ---
 
-## 📂 Project Structure (Example)
+## 🖼 CI/CD Pipeline Diagram
+![CI/CD Pipeline Architecture](https://raw.githubusercontent.com/<user>/<repo>/main/cicd-diagram.png)
 
